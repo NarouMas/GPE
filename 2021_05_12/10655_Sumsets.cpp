@@ -9,7 +9,7 @@ int findsum(int arr[], int target, int n,int current, int depth, int sum)
 	{
 		add = sum + arr[i];
 		//printf("add:%d target:%d depth:%d\n", add, arr[target], depth);
-		if(add > arr[target])
+		if(add > arr[target] || depth > 27)
 			return 0;
 		else if(add == arr[target] && depth == 2)
 			return 1;
